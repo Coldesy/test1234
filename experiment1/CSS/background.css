@@ -1,0 +1,45 @@
+.color-palette {
+  --primary-color: #ff69b4;
+  --secondary-color: #1e90ff;
+  --accent-color: #f5a623;
+  --text-color: #000000;
+}
+
+.color-palette2 {
+  --primary-color: #7c3aed;
+  --secondary-color: #00c2a6;
+  --accent-color: #f5a623;
+  --text-color: #ffffff;
+}
+
+.color-palette3 {
+  --primary-color: #f44336;
+  --secondary-color: #4caf50;
+  --accent-color: #ffc107;
+  --text-color: #ffffff;
+}
+
+body {
+  background-color: #1f1f1f ; 
+  color: var(--text-color); 
+  transition: background-color 2s ease-in-out;
+}
+
+.color-transition {
+  transition: color 2s ease-in-out;
+}
+
+body.color-palette {
+  background-color: #3e6848; 
+  --text-color: #d44c4c; 
+}
+
+body.color-palette2 {
+  background-color: #333333; 
+  --text-color: #2cb179; 
+}
+
+body.color-palette3 {
+  background-color: #476688; 
+  --text-color: #87c046; 
+}

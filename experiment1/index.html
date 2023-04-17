@@ -1,0 +1,90 @@
+<!-- ***************Start of the first ever homie web-dev experiment*************** -->
+<!DOCTYPE html>
+<html lang="en">
+<!-- **********Beginning with the head section containing all of the links that aren't custom javascript********** -->
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script> -->
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Chakra+Petch&family=Open+Sans&display=swap" />
+  <link rel="stylesheet" href="\CSS\background.css" />
+  <link rel="stylesheet" href="\CSS\intro.css" />
+  <link rel="stylesheet" href="\CSS\login_button.css" />
+  <link rel="stylesheet" href="\CSS\nav.css" />
+  <link rel="stylesheet" href="\CSS\pg_transition.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+</head>
+<!-- **********Now the body********** -->
+<body>
+<!-- ***************Start of Navigation bar without bootstrap*************** -->
+  <header>
+    <nav class="navbar">
+      <div class="navbar-container">
+        <a class="navbar-brand" href="#">
+          <img src="z_img/logo.webp" alt="Anime Logo" width="50" height="50" class="logo" />
+          <span class="logo-text">Experiment1</span>
+        </a>
+        <ul class="navbar-menu">
+          <li class="navbar-item">
+            <a href="#" class="navbar-link active">Home</a>
+          </li>
+          <li class="navbar-item">
+            <a href="#" class="navbar-link">Recommendations</a>
+          </li>
+          <li class="navbar-item">
+            <a href="#" class="navbar-link">Games</a>
+          </li>
+          <li class="navbar-item">
+            <a href="#" class="navbar-link">Forums</a>
+          </li>
+          <li class="navbar-item">
+            <a href="#" class="navbar-link">Contact Us</a>
+          </li>
+        </ul>
+        <button class="btn login-btn">Log in</button>
+        <button class="navbar-toggle">
+          <span class="navbar-toggle-icon"></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+<!-- ***************End of Navigation bar without bootstrap*************** -->
+
+<!-- ***************First section of the website, below the navbar*************** -->
+  <div id="particles-container"></div>
+  <section class="intro-section">
+    <div class="container">
+      <h1 class="intro-title" id="magic-text">Welcome to Experiment1</h1>
+      <button class="btn intro-button">Sign In</button>
+    </div>
+  </section>
+<!-- ***************End of the First section of the website, below the navbar*************** -->
+
+<!-- ***************Start of Section 2 for checking page transition*************** -->
+  <section id="section-2">
+    <div class="container">
+      <h2>Section 2 for testing transition</h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed gravida
+        neque non turpis finibus, at rhoncus metus auctor. Proin a velit
+      </p>
+      <p>
+        Suspendisse et mauris sit amet nulla sagittis consectetur ac sit amet
+        urna. Morbi volutpat malesuada tellus, eu vestibulum eros varius ac.
+      </p>
+    </div>
+  </section>
+<!-- ***************End of Section 2 for checking page transition*************** -->
+
+<!-- ***************Now linking all of the custom javascript files*************** -->
+  <script src="\JS\background.js"></script>
+  <script src="\JS\particles.js"></script>
+  <script src="\JS\pg_transition.js"></script>
+</body>
+<!-- ***************End of the body*************** -->
+</html>
+<!-- ***************The End*************** -->
