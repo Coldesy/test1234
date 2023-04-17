@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300;400&display=swap");
+
+* {
+  box-sizing: border-box;
+  user-select: none;
+  font-family: "Chakra Petch", sans-serif;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+.navbar {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
+}
+.brand-title {
+  font-size: 2.5rem;
+  margin: 0.5rem;
+  padding: 0 0.5rem;
+}
+.navbar-links {
+  height: 100%;
+}
+.navbar-links ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+.navbar-links li {
+  list-style: none;
+  font-size: 1.5rem;
+}
+.navbar-links li a {
+  position: relative;
+  display: block;
+  text-decoration: none;
+  padding: 1rem;
+  margin: 0 1rem;
+}
+.navbar-links li a::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  bottom: 0.5rem;
+  left: 0;
+  background-color: currentColor;
+  transform-origin: bottom center;
+  transition: all 0.3s ease-in-out 0s;
+  transform: scaleX(0);
+}
+.navbar-links li a:hover::after {
+  transform: scaleX(1);
+}
+.navbar-login-btn {
+  padding: 0.6rem 1.2rem;
+  border: 0.4rem;
+  margin-right: 1rem;
+  font-size: 1.5rem;
+  appearance: none;
+  font-family: "Chakra Petch", sans-serif;
+  border-radius: 0.4rem;
+  cursor: pointer;
+}
+.navbar-login-btn:hover {
+  background-color: #eeb2ca;
+}
+.toggle-button {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+}
+.toggle-button .bar {
+  height: 3px;
+  width: 100%;
+  background-color: white;
+  border-radius: 10px;
+}
+
+@media (max-width: 1100px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .toggle-button {
+    display: flex;
+  }
+  .navbar-login-btn {
+    position: absolute;
+    margin-top: 0.6rem;
+
+    right: 4rem;
+  }
+  .navbar-links {
+    display: none;
+    width: 100%;
+  }
+
+  .navbar-links ul {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .navbar-links ul li {
+    text-align: center;
+  }
+
+  .navbar-links ul li a {
+    padding: 0.5rem 1rem;
+  }
+
+  .navbar-links.active {
+    display: flex;
+  }
+  .navbar-links li a::after {
+    content: none;
+  }
+  .navbar-links li a:hover {
+    text-decoration: underline;
+  }
+}
